@@ -1,7 +1,25 @@
 aid: altru
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/altru.png
 name: Altru
-description: Altru is a company surfaced as a portfolio company of techstars and added to the API Evangelist
-  network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: Altru (Altru Labs, Inc.) was a mobile-first, employee-generated video storytelling
+  platform for recruitment marketing and talent acquisition, enabling organizations to capture,
+  edit, brand, approve, and distribute authentic employee video content across career sites, social
+  media, and email/text campaigns, with video transcription in 14+ languages. Founded in 2017 and
+  based in Brooklyn, New York, and backed by Techstars, Altru served brands including Target, PwC,
+  Intuit, L'Oreal, and Box before being acquired by iCIMS on December 14, 2020 and folded into the
+  iCIMS Talent Cloud. Altru no longer operates as an independent provider — altrulabs.com now
+  redirects to icims.com and there is no public developer or API surface.
 url: https://raw.githubusercontent.com/api-evangelist/altru/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -9,11 +27,23 @@ x-backed-by:
 - techstars
 x-tier: stub
 x-tier-reason: portfolio-lead
+x-status: acquired
+x-acquired-by: icims
+x-acquired-date: '2020-12-14'
+x-founded: '2017'
+x-headquarters: Brooklyn, New York, USA
 specificationVersion: '0.20'
 created: '2026-07-17'
 modified: '2026-07-17'
 tags:
 - Company
+- Talent Acquisition
+- Recruitment Marketing
+- HR Tech
+- Video
+- Employee Generated Content
+- Employer Branding
+- Acquired
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -21,5 +51,14 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/altru-domain-security.yml
 - type: Website
   url: https://altrulabs.com/
+- type: Login
+  url: https://app.altrulabs.com/
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
