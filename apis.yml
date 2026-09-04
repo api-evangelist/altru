@@ -21,6 +21,8 @@ accessModel:
   source: []
   generated: '2026-07-22'
   method: derived
+  source:
+  - {url: 'https://altrulabs.com/', status: 301, note: 'declared website redirects to https://www.icims.com/ — a different registrable domain (altrulabs.com -> icims.com), possible rename or acquisition (probed 2026-09-03, roadmap#169)'}
 image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/altru.png
 name: Altru
 description: Altru (Altru Labs, Inc.) was a mobile-first, employee-generated video storytelling
